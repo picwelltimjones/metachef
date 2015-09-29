@@ -6,7 +6,7 @@ default[:metachef][:home_dir] = '/etc/metachef'
 default[:metachef][:user]     = 'root'
 
 # Request user account properties here.
-default[:users]['root'][:primary_group] = "root"
+default[:users]['root'][:primary_group] = ["root"]
 
 default[:announces] ||= Mash.new
 
